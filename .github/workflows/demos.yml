@@ -1,18 +1,31 @@
 name: DEMOS CI
+
 on:
   push:
+    branches:
+      - main
     paths:
-      - "./demos/**"
+      - 'demos/**'
+
 defaults:
   run:
     working-directory: ./demos
+
 jobs:
   test:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: yarn ci
-      - run: yarn test
+
+      - name: Install dependencies
+        run: yarn ci
+
+      - name: Run tests
+        run: yarn test
