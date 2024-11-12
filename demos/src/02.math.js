@@ -3,6 +3,7 @@ function sum(a, b) {
   return a + b;
 }
 
+// this is a subtract
 function subtract(a, b) {
   return a - b;
 }
