@@ -13,6 +13,7 @@ function multiply(a, b) {
   return a * b;
 }
 
+// this is a divide
 function divide(a, b) {
   if(b === 0) return null;
   return a / b;
