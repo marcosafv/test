@@ -8,6 +8,7 @@ function subtract(a, b) {
   return a - b;
 }
 
+// this is a multiply
 function multiply(a, b) {
   return a * b;
 }
