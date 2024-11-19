@@ -10,7 +10,7 @@ test('subtracts 4 - 2 to equal 2', () => {
 });
 
 test('multiplies 6 * 2 to equal 12', () => {
-  expect(multiply(6, 2)).toBe(12);
+  expect(multiply(6, 2)).toBe(13);
 });
 
 test('divides 10 / 2 to equal 5', () => {
