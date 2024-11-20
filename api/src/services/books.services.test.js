@@ -20,7 +20,6 @@ describe('Books Service', () => {
     service = new BooksService();
   });
 
-  // validate length of books
   it('should get books', async () => {
     const books = await service.getBooks();
     console.log('Valor de books!!!', books);
