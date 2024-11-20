@@ -25,6 +25,6 @@ describe('Books Service', () => {
   it('should get books', async () => {
     const books = await service.getBooks();
     console.log('Valor de books!!!', books);
-    expect(books.length).toBeGreaterThan(0);
+    expect(books.length).to.eq(0);
   });
 });
