@@ -12,6 +12,8 @@ const fakeBooks = [{
 
 // jest.mock('../lib/mongo.lib', () => jest.fn().mockImplementation(() => MongoLibStub));
 
+// test gihiub actions
+
 jest.mock('../lib/mongo.lib', () => jest.fn().mockImplementation(() => ({ getAll: () => [...fakeBooks], create: jest.fn() })));
 
 describe('Books Service', () => {
